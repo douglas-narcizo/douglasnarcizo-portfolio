@@ -1,0 +1,349 @@
+/*----- General Styles -----*/
+
+html, body {
+    font-size: 18px;
+    font-family: 'Jura', sans-serif;
+    line-height: 1.3;
+    background-color: black;
+    color: hsla(0, 0%, 90%, 1);
+    box-sizing: border-box;
+    margin: auto 1.5rem;
+    scroll-behavior: smooth;
+}
+
+header, main, footer, nav {
+    max-width: 1100px;
+    margin: auto auto;
+}
+
+a {
+    color: hsla(0, 0%, 90%, 1);
+}
+
+a:hover {
+    color: hsla(170, 100%, 40%, 1);
+}
+
+hr {
+    margin: 3rem auto;
+}
+
+.highlight {
+    color: hsla(170, 100%, 40%, 1);
+}
+
+/*----- Header Elements -----*/
+
+.top-bar {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 50%, hsla(0, 0%, 0%, 0) 100%); 
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 0.8rem 2rem;
+    font-size: 1.2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#top-canvas {
+    position: absolute;
+    top: 2rem;
+    max-width: 1100px;
+    height: 24rem;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#about {
+    padding-top: 2rem;
+}
+
+.banner {
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+/* h1, h2 {
+    /* font-family: 'Noto Sans Mono', monospace;
+    font-weight: 400;
+} */
+
+h1 {
+    font-size: 5rem;
+    color: hsla(170, 100%, 40%, 1);
+    margin: 10rem 0 1rem;
+    text-shadow: hsla(0, 0%, 0%, 1) 0 0 3rem, hsla(0, 0%, 0%, 1) 1px 1px 2px, hsla(0, 0%, 0%, 1) -1px -1px 2px;
+    z-index: 5;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: hsla(0, 0%, 90%, 1);
+    margin: 2rem 0.4rem 6rem;
+    text-shadow: hsla(0, 0%, 0%, 1) 0 0 3rem, hsla(0, 0%, 0%, 1) 1px 1px 2px, hsla(0, 0%, 0%, 1) -1px -1px 2px;
+    z-index: 5;
+}
+
+#shade {
+    content: ' ';
+    width: 100%;
+    height: 6rem;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(0deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 100%); 
+    transform: translateY(-7rem);
+    z-index: 2;
+}
+
+/*----- Projects Section Styles -----*/
+
+.project-container {
+    display: flex;
+    margin: 2rem 0;
+    border: 1px solid hsla(0, 0%, 50%, 1);
+    border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.project-container:hover {
+    background-color: hsla(170, 100%, 10%, 0.4);
+    border-color: hsla(170, 50%, 40%, 1);
+    box-shadow: inset hsla(170, 50%, 50%, 0.4) 0px 0px 40px -12px;
+}
+
+.project-image {
+    display: flex;
+    max-width: 35%;
+    min-width: 16rem;
+    margin: 0 0.5rem;
+}
+
+.project-image img {
+    box-sizing: content-box;
+    width: 100%;
+    border: 2px solid hsla(0, 0%, 20%, 0.5);
+    border-radius: 6px;
+    align-self: center;
+    transition-duration: 0.3s;
+}
+
+.project-image img:hover {
+    transform: scale(1.05);
+    border-color: hsla(170, 50%, 40%, 1);
+    box-shadow:hsla(170, 50%, 50%, 0.4) 0px 0px 35px -5px;
+}
+
+.project-description {
+    margin: 1rem 1.5rem;
+}
+
+.project-description h2 {
+    margin: 0;
+    color: hsla(170, 100%, 40%, 1);
+}
+
+/*----- Roles / Skill blocks Styles -----*/
+
+.my-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.my-roles div {
+    color: hsla(170, 100%, 40%, 1);
+    border: 1px solid hsla(170, 100%, 30%, 1);
+    border-radius: 4px;
+    padding: 1px 6px 3px;
+    display: inline;
+}
+
+.my-roles div::before {
+    content: ' ';
+    padding: 2px 9px 4px;
+    background-color: hsla(170, 100%, 30%, 1);
+    position: relative;
+    left: -7px;
+    border-radius: 4px 0 0 4px;
+    display: inline;
+}
+
+/*----- "Pocket Projects" are containers for smaller projects -----*/
+
+.pocket-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pocket {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 27%;
+    min-width: 270px;
+    border: 1px solid hsla(0, 0%, 50%, 1);
+    border-radius: 8px;
+    padding: 1rem;
+    transition-duration: 0.3s;
+}
+
+.pocket:hover {
+    background-color: hsla(170, 100%, 10%, 0.4);
+    border-color: hsla(170, 50%, 40%, 1);
+    box-shadow: inset hsla(170, 50%, 50%, 0.4) 0px 0px 40px -12px;
+}
+
+.pocket h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: hsla(170, 100%, 40%, 1);
+    text-decoration: none;
+}
+
+.pocket p {
+    margin: 0 0 2rem;
+    color: hsla(0, 0%, 90%, 1);
+}
+
+.pocket .my-roles {
+    padding: 0;
+    margin: 1rem 0;
+    align-self: flex-end;
+}
+
+#skillicons-rendered {
+    display: block;
+    margin: 2rem auto;
+}
+
+.icons {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.icons img {
+    width: 3rem;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    border: 1px solid hsla(0, 0%, 50%, 1);
+    border-radius: 8px;
+    padding: 0 4rem;
+    transition-duration: 0.3s;
+}
+
+.contact-container:hover {
+    color: hsla(170, 100%, 40%, 1);
+    background-color: hsla(170, 100%, 10%, 0.4);
+    border-color: hsla(170, 50%, 40%, 1);
+    box-shadow: inset hsla(170, 50%, 50%, 0.4) 0px 0px 40px -12px;
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 850px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    header h2 {
+        font-size: 1.7rem;
+    }
+
+    .project-image {
+        max-width: 75%;
+        margin: 1rem;
+    }
+
+    .pocket-container {
+        justify-content: space-evenly;
+    }
+
+    #top-canvas {
+        left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    html, body {
+        font-size: 16px;
+        margin: auto 1rem;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 1rem auto;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .project-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-image {
+        max-width: 90%;
+        margin: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .contact-container {
+        padding: 0;
+        justify-content: center;
+    }
+
+    #top-canvas {
+        height: 28rem;
+    }
+}

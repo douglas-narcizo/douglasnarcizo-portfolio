@@ -21,7 +21,8 @@ a {
 }
 
 a:hover {
-    color: hsla(170, 100%, 40%, 1);
+    color: hsla(170, 100%, 90%, 1);
+/*  color: hsla(170, 100%, 40%, 1); */
 }
 
 hr {

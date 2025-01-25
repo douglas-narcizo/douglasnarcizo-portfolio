@@ -76,6 +76,7 @@ nav a:hover {
 #top-canvas {
     position: absolute;
     top: 2rem;
+    width: 100%;
     max-width: 1100px;
     height: 24rem;
     z-index: 0;

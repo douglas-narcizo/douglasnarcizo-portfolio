@@ -5,8 +5,7 @@ const contactButton = document.getElementById('contact-button');
 contactButton.addEventListener('click', revealContact);
 
 function revealContact(e) {
-    contactButton.innerHTML = '<a href="mailto:contact@douglasnarcizo.me"><h2>contact@douglasnarcizo.me</h2></a>';
-    console.log(contactButton);
+    contactButton.innerHTML = '<a href="mailto:contact@douglasnarcizo.com"><h2>contact@douglasnarcizo.com</h2></a>';
 }
 
 /* The following code is for adding a "The Matrix" effect to the canvas,
@@ -20,8 +19,10 @@ const canvas = document.getElementById('top-canvas');
 const ctx = canvas.getContext('2d');
 
 // set the width and height of the canvas
-const w = 1110;
+const w = Math.min( window.innerWidth, 1100 );
 const h = 420;
+ctx.canvas.width = w;
+ctx.canvas.height = h;
 
 /* Portrait setup
 const portrait = new Image();

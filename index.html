@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;600&display=swap" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <title>Douglas Narcizo - Portfolio</title>
 </head>
 
@@ -43,17 +44,19 @@
 
       <div id="shade"></div>
 
-      <p>Musician, producer for many years, beer sommelier, developer.
-        <br>That's me.</p>
+      <p>And musician, producer, beer sommelier, father…
+        <br>That's me!</p>
       <p>I'm a solutions guy.
-        <br>Identifying where the problems really are, and figuring out how to get rid of them.
-        <br>That's my story.</p>
+        <br>Identifying where problems really are, and figuring out how to get rid of them.
+        <br>That's what my story is about.</p>
       <p>Welcome to my portfolio page, and thanks for visiting!</p>
       <p>I'm a software developer living in Florianópolis - Santa Catarina, a beautiful island in the south of Brazil,
         which has a vibrant and ever-growing technology ecosystem</p>
-      <p>As a team leader, I acted as a facilitator to find the path to be followed so that my team could achieve its goal.
-        <br>As a developer, I prioritize understanding the customer's real needs, to create effective solutions for their demands,
-        focusing on the usability and efficiency of the apps we build together.</p>
+      <p>I'm also the founder of <a href="https://ondasonora.com.br" target="_blank" rel="noreferrer noopener">Onda Sonora</a> – 
+        a production studio dedicated to creating jingles and soundtracks for advertising and cinema.
+        <br>From where I bring experience in team leadership and customer relations.</p>
+      <p>As a developer, I have a lot of fun when creating an app's API, and I really have a great time when it comes to
+        create attractive UX/UI elements and interactions for a new app, or improving an existing one.</p>
 
     </section>
 
@@ -65,7 +68,21 @@
       <h2>Projects</h2>
       <h3>Here are some projects I've been working:</h3>
 
-      <a class="project-container" href="https://dougs-jammming.netlify.app/" target="_blank">
+      <a class="project-container" href="https://musigear.app" target="_blank" rel="noreferrer noopener">
+        <div class="project-image"><img src="images/musigear-cover.jpg" alt=""></div>
+        <div class="project-description">
+          <h2>MusiGear</h2>
+          <span>E-commerce platform for music lovers</span>
+          <p>Select a category and grab your favorite instrument or gadget. This store was designed
+            to be as clean and straightforward as possible, for a smooth navigation experience.</p>
+          <br>
+          <div class="my-roles">
+            <div>Full Stack App</div><div>React</div><div>PostgreSQL</div><div>MUI Material UI</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-container" href="https://dougs-jammming.netlify.app/" target="_blank" rel="noreferrer noopener">
         <div class="project-image"><img src="images/jammming-cover.jpg" alt=""></div>
         <div class="project-description">
           <h2>Jammming</h2>
@@ -74,12 +91,12 @@
             Add to your favorite playlist, or create a new one. Simple as that. Enjoy!</p>
           <br>
           <div class="my-roles">
-            <div>SPA - Single Page App</div><div>React</div><div>Multiplatform responsive</div>
+            <div>React</div><div>Spotify API client</div><div>SPA - Single Page App</div>
           </div>
         </div>
       </a>
 
-      <a class="project-container" href="https://i-reddit.netlify.app/" target="_blank">
+      <a class="project-container" href="https://ireddit.app" target="_blank" rel="noreferrer noopener">
         <div class="project-image"><img src="images/ireddit-cover.jpg" alt=""></div>
         <div class="project-description">
           <h2>i-Reddit</h2>
@@ -88,12 +105,12 @@
             at your fingertips. No account needed.</p>
           <br>
           <div class="my-roles">
-            <div>SPA - Single Page App</div><div>React</div><div>Redux</div><div>Multiplatform responsive</div>
+            <div>React</div><div>Redux</div><div>Reddit API client</div><div>SPA - Single Page App</div>
           </div>
         </div>
       </a>
 
-      <a class="project-container" href="https://github.com/douglas-narcizo/ecommerce-rest-api" target="_blank">
+      <a class="project-container" href="https://github.com/douglas-narcizo/ecommerce-rest-api" target="_blank" rel="noreferrer noopener">
         <div class="project-image"><img src="images/ecommerce-api-cover.jpg" alt=""></div>
         <div class="project-description">
           <h2>e-Commerce API</h2>
@@ -107,7 +124,7 @@
         </div>
       </a>
 
-      <a class="project-container" href="https://douglas-narcizo.github.io/therockclub" target="_blank">
+      <a class="project-container" href="https://douglas-narcizo.github.io/therockclub" target="_blank" rel="noreferrer noopener">
         <div class="project-image"><img src="images/therockclub-cover.jpg" alt=""></div>
         <div class="project-description">
           <h2>The Rock Club</h2>
@@ -121,7 +138,7 @@
         </div>
       </a>
 
-      <a class="project-container" href="https://douglas-narcizo.github.io/jubbajump/" target="_blank">
+      <a class="project-container" href="https://douglas-narcizo.github.io/jubbajump/" target="_blank" rel="noreferrer noopener">
         <div class="project-image"><img src="images/jubba-jump-cover.jpg" alt=""></div>
         <div class="project-description">
           <h2>Jubba Jump Lobster Co.</h2>
@@ -134,26 +151,12 @@
           </div>
         </div>
       </a>
-
-      <a class="project-container" href="https://ondasonora.com.br/" target="_blank">
-        <div class="project-image"><img src="images/ondasonora-cover.jpg" alt=""></div>
-        <div class="project-description">
-          <h2>Onda Sonora</h2>
-          <span>( site in portuguese )</span>
-          <p>Audio Production | Post-production Studio</p>
-          <p>Here we started with a pre-built theme, and fully customized it to reflect target aesthetics and
-            functionality. I am the founder of this studio, as part of my passion for music playing, creation and production.</p>
-          <div class="my-roles">
-            <div>Front-end</div><div>Design</div><div>CSS</div>
-          </div>
-        </div>
-      </a>
-
+<!-- 
       <h3>And here some smaller projects / libraries:</h3>
 
       <div class="pocket-container">
 
-        <a class="pocket" href="https://douglas-narcizo.github.io/once-upon-a-time" target="_blank">
+        <a class="pocket" href="https://douglas-narcizo.github.io/once-upon-a-time" target="_blank" rel="noreferrer noopener">
           <h2>Once Upon a Time…</h2>
           <p>Get inspired with this simple, easy to use, kids story generator</p>
           <div class="my-roles">
@@ -161,7 +164,7 @@
           </div>
         </a>
 
-        <a class="pocket" href="https://github.com/douglas-narcizo/credit-card-checker/" target="_blank">
+        <a class="pocket" href="https://github.com/douglas-narcizo/credit-card-checker/" target="_blank" rel="noreferrer noopener">
           <h2>Credit Card Checker</h2>
           <p>A pack of validation methods for Credit Cards</p>
           <div class="my-roles">
@@ -169,7 +172,7 @@
           </div>
         </a>
 
-        <a class="pocket" href="https://douglas-narcizo.github.io/number-guesser" target="_blank">
+        <a class="pocket" href="https://douglas-narcizo.github.io/number-guesser" target="_blank" rel="noreferrer noopener">
           <h2>Number Guessing Game</h2>
           <p>Simple number guessing game in JavaScript</p>
           <div class="my-roles">
@@ -178,7 +181,7 @@
         </a>
 
       </div>
-
+ -->
     </section>
 
     <!-----SKILLS----->
@@ -186,26 +189,36 @@
       <hr>
       <h3>Skills</h3>
       <div class="icons">
-        <img src="./assets/skill-icons/JavaScript.svg" alt="" title="JavaScript">
+        <img src="./assets/skill-icons/NextJS-Dark.svg" alt="" title="Next.js">
         <img src="./assets/skill-icons/React-Dark.svg" alt="" title="React">
         <img src="./assets/skill-icons/Redux.svg" alt="" title="Redux">
+        <img src="./assets/skill-icons/TailwindCSS-Dark.svg" alt="" title="Tailwind CSS">
         <img src="./assets/skill-icons/MaterialUI-Dark.svg" alt="" title="Material UI">
-        <img src="./assets/skill-icons/ExpressJS-Dark.svg" alt="" title="Express">
-        <img src="./assets/skill-icons/NodeJS-Dark.svg" alt="" title="Node.js">
         <img src="./assets/skill-icons/PostgreSQL-Dark.svg" alt="" title="PostgreSQL">
-        <img src="./assets/skill-icons/Markdown-Dark.svg" alt="" title="Markdown">
-        <img src="./assets/skill-icons/VSCode-Dark.svg" alt="" title="VS Code">
-        <img src="./assets/skill-icons/HTML.svg" alt="" title="HTML">
+        <img src="./assets/skill-icons/MongoDB.svg" alt="" title="Mongo DB">
+        <img src="./assets/skill-icons/Vite-Dark.svg" alt="" title="Vite">
+        <img src="./assets/skill-icons/GCP-Dark.svg" alt="" title="Google Cloud Platform">
+        <img src="./assets/skill-icons/Docker.svg" alt="" title="Docker">
+        <img src="./assets/skill-icons/NodeJS-Dark.svg" alt="" title="Node.js">
         <img src="./assets/skill-icons/Git.svg" alt="" title="Git">
-        <img src="./assets/skill-icons/Github-Dark.svg" alt="" title="GitHub">
       </div>
     </section>
 
     <!-----CONTACT----->
     <section id="contact">
       <hr>
-      <div class="contact-container" id="contact-button">
-        <h2>Click for Contact!</h2>
+      <div class="contact-container">
+        <h3>
+          <div>
+            <span>Contact me:</span>
+            <a class="fab fa-linkedin" 
+              href="https://www.linkedin.com/in/douglas-narcizo"
+              target="_blank" rel="noreferrer noopener"></a>
+            <a class="fab fa-github"
+              href="https://github.com/douglas-narcizo"
+              target="_blank" rel="noreferrer noopener"></a>
+          </div>
+        </h3>
       </div>
     </section>
   </main>

@@ -272,16 +272,32 @@ header h2 {
     border: 1px solid hsla(0, 0%, 50%, 1);
     border-radius: 8px;
     padding: 0 4rem;
-    transition-duration: 0.3s;
 }
 
-.contact-container:hover {
+.contact-container div {
+    display: flex;
+    align-items: center;
+}
+
+.fab {
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.fab:hover {
+    transform: scale(1.25);
+    box-shadow:hsla(170, 50%, 80%, 0.4) 0px 0px 35px -5px;
+}
+
+/* .contact-container:hover {
     color: hsla(170, 100%, 40%, 1);
     background-color: hsla(170, 100%, 10%, 0.4);
     border-color: hsla(170, 50%, 40%, 1);
     box-shadow: inset hsla(170, 50%, 50%, 0.4) 0px 0px 40px -12px;
     cursor: pointer;
-}
+} */
 
 footer {
     margin-bottom: 4rem;

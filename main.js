@@ -1,12 +1,12 @@
 // Link to DOM elements
-const contactButton = document.getElementById('contact-button');
+/* const contactButton = document.getElementById('contact-button');
 
 // Contact functionality handler
 contactButton.addEventListener('click', revealContact);
 
 function revealContact(e) {
     contactButton.innerHTML = '<a href="mailto:contact@douglasnarcizo.com"><h2>contact@douglasnarcizo.com</h2></a>';
-}
+} */
 
 /* The following code is for adding a "The Matrix" effect to the canvas,
 *  as a background animation to the top banner.
